@@ -1,0 +1,21 @@
+#chlo cross porduct in physics of two vectors define krte h 
+def cross_product(x, y):
+    product0 = 0
+    product1 = 0
+    product2 = 0
+    if(len(x)==len(y)==3):
+        product0 = (x[1]*y[2])-(x[2]*y[1])
+        product1 = -((x[0]*y[2])-(x[2]*y[0]))
+        product2 = (x[0]*y[1])-(x[1]*y[0])
+        result_p = (product0,"i", product1,"j",product2,"k") 
+        return result_p
+    else:
+        return("use maths,not normal cross product")
+    
+
+    
+
+x = ([2, 3, 4])
+y = ([4, 5, 6])
+print(cross_product(x, y))
+#aab kya kre, ye to isliye kiya coz bada alas ata h cross product nikalne me
